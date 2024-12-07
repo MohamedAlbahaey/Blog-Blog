@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs")  %>
+
+<div class="container  mt-4" style="width: 80%;" >
+    <h1 class="d-flex justify-content-center align-items-center mb-4">Edit your Blog</h1>
+    <form action="/posts/edit/<%=index%>" method="POST">
+        <div class="mb-3">
+            <input type="text" name="title" class="form-control" id="exampleFormControlInput1" placeholder="Blog Title" value="<%=title%>">
+        </div>
+        <div class="mb-3">
+            <textarea type="text" name="text" class="form-control" id="exampleFormControlTextarea1" placeholder="Write your Blog here" rows="10"><%=text%></textarea>
+        </div>
+        <div class="mb-3">
+            <button type="edit" class="btn btn-bd-primary btn-lg px-4 gap-3">
+                Repost
+            </button>
+        </div>
+    </form>
+</div>
+
+
+<%- include("partials/footer.ejs")  %>

@@ -11,13 +11,15 @@
                             <h3 class="card-title"> <%= titles[i] %> </h3>
                             <p class="card-text mb-auto"> <%= texts[i].substring(0,100) %></p>
                         <div>
-                            <button type="button" class="btn btn-bd-primary btn-sm px-2 gap-3 mt-2">
-                                Read More 
-                            </button>
-                            <a href="/posts/edit/<%=i%>"><img class="ms-3 mt-2" src="/images/pencil-square.svg"/></a>
-                            <a href="/posts/delete/<%=i%>">
-                                <img class="ms-2 mt-2" src="/images/trash-fill.svg" />
-                            </a>
+                            <form action="/posts/readmore/<%=i%>" method="GET"> 
+                                <button type="submit" class="btn btn-bd-primary btn-sm px-2 gap-3 mt-2">
+                                    Read More 
+                                </button>
+                                <a href="/posts/edit/<%=i%>"><img class="ms-3 mt-2" src="/images/pencil-square.svg"/></a>
+                                <a href="/posts/delete/<%=i%>">
+                                    <img class="ms-2 mt-2" src="/images/trash-fill.svg" />
+                                </a>
+                            </form>
                         </div>
                     </div>
                 </div>

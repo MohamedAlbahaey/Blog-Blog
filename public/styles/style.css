@@ -67,3 +67,26 @@ h3{
     --bs-btn-active-border-color: var(--btn-active);
 }
 
+.blog-container {
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+padding: 20px;
+border-radius: 10px;
+background-color: #ffffff;
+max-width: 950px;
+min-width: 950px;
+min-height: 350px;
+}
+
+.blog-title {
+text-align: center;
+margin-bottom: 20px;
+font-size: 2rem;
+font-weight: bold;
+}
+
+.blog-text {
+text-align: left;
+font-size: 1rem;
+line-height: 1.6;
+}
+

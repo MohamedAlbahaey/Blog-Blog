@@ -1,23 +1,22 @@
 <%- include("partials/header.ejs")  %>
 
-<div class="container  mt-4" style="width: 80%;" >
-    <h1 class="d-flex justify-content-center align-items-center mb-4">Edit your Blog</h1>
-    <form action="/posts" method="POST">
-        <div class="mb-3">
-            <input type="text" name="title" class="form-control" id="exampleFormControlInput1" placeholder="Blog Title">
-        </div>
-        <div class="mb-3">
-            
-            <textarea type="text" name="text" class="form-control" id="exampleFormControlTextarea1" placeholder="Write your Blog here" rows="10"></textarea>
-            
-        </div>
-        <div class="mb-3">
-            <button type="edit" class="btn btn-bd-primary btn-lg px-4 gap-3">
-                Repost
-            </button>
-        </div>
-    </form>
-</div>
+<!-- <div class="px-4 py-4 text-center">
+    <h1 class="d-flex justify-content-center align-items-top mb-4"><%=title%></h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4"><%=text%></p>
+    </div>
+</div> -->
 
+<div class="d-flex align-items-center justify-content-center px-4 py-5 my-4">
+    <div class="blog-container mx-auto p-4">
+      <!-- Blog Title -->
+      <h1 class="blog-title"><%=title%></h1>
+      
+      <!-- Blog Text -->
+      <p class="blog-text">
+        <%=text%>
+      </p>
+    </div>
+</div>
 
 <%- include("partials/footer.ejs")  %>

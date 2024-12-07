@@ -41,16 +41,16 @@ h3{
     font-style: normal;
 }
 
+.nav-link{
+    color: black;
+    --bs-nav-link-hover-color:  White;
+}
+
 :root{
     --btn-bg: #6FB3B8;
     --btn-hover: #5F9A9E;
     --btn-active: #5F9A9E;
     --btn-text: white;
-}
-
-.nav-link{
-    color: black;
-    --bs-nav-link-hover-color:  White;
 }
 
 .btn-bd-primary {
